@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>カーフェリーいえじま・ぐすく｜沖縄県本部町⇔伊江島</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- googleフォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- スライダー -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/e3382d9008.js" crossorigin="anonymous"></script>
+  <!-- 郵便番号自動入力 -->
+  <script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>
+  <!-- 自作JS -->
+  <script src="fanctions.js"></script>
+</head>
+
+<div class="page">
+
+  <body>
+
+    <header>
+      <div class="header-top">
+        <a href="index.html">
+          <h1><img src="images/logo.png" alt="logo"></h1>
+        </a>
+        <p>?よくあるご質問</p>
+        <form method="get" action="https://www.google.co.jp/search" target="_blank">
+          <input type="text" name="q">
+          <input type="submit" name="btng" value="検索">
+          <input type="hidden" name="hl" value="ja">
+          <input type="hidden" name="sitesearch" value="ka-feri-iejima-gusuku.kirara.st">
+        </form>
+        <h2 class="lang">LANGUAGE</h2>
+        </a>
+        <a href="#">
+          <h2 class="Contact">お問い合わせ</h2>
+        </a>
+      </div>
+      <nav>
+        <a href="yoyaku.html"><img src="images/minnav1-goyoyaku.png" alt="ご予約"></a>
+        <a href="unkou.html"><img src="images/minnav2-unkoujyoukyou.png" alt="運行情報"></a>
+        <a href="yoyakukarajyousen.html"><img src="images/minnav3-yoyakukarajyousen.png" alt="予約から乗船まで"></a>
+        <a href="shimadeasobu.html"><img src="images/minnav4-shimadeasobu.png" alt="島で遊ぶ"></a>
+        <a href="#"><img src="images/minnav5-netshop.png" alt="ネットショッピング"></a>
+      </nav>
+    </header>
+
+    <main id="yoyaku">
+
+      <h1>乗船券ネット予約</h1>
+      <div class="yoyaku-box">
+        <h2>新規会員登録</h2>
+        <div class="line"><img src="images/線 7.png" alt=""></div>
+
+        <p>氏名（カナ）　　<label><input type="text" placeholder="（例）　ヤマダ　ハナコ"></label></p>
+        <p>性別　　　　　　<label><select name="性別" id="seibetu" required>
+              <option value="0">選択してください</option>
+              <option value="1">男性</option>
+              <option value="2">女性</option>
+            </select></label></p>
+        <p>電話番号　　　　<label><input type="tel" required></label></p>
+        <p>生年月日　　　　<label><input type="date" name="calendar" max="9999-12-31" required></label></p>
+        <label>
+          <form class="h-adr">
+            <span class="p-country-name" style="display:none;">Japan</span>
+            <p>郵便番号　　　　<input type="text" class="p-postal-code" size="8" maxlength="8" required></p><br>
+            <p>都道府県　　　　<input type="text" class="p-region" /></p><br>
+            <p>地区町村　　　　<input type="text" class="p-locality" /></p><br>
+            <p>町名番地　　　　<input type="text" class="p-street-address p-extended-address" /></p><br>
+            <p>建物名　　　　　<input type="text" class="last-address" placeholder="建物名と部屋番号" /></p>
+          </form>
+        </label>
+        <p>メールアドレス　<label><input type="email" required></label></p>
+        <p>パスワードの入力<label><input type="text" name="password" placeholder="6文字以上半角英数字"></label></p>
+        <div class="submid">
+          <input type="submit" name="submit" id="" value=" > 確認画面へすすむ">
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="background-color">
+        <div class="footer-wrappertop">
+
+          <div class="footer-box">
+            <h3><i class="fa-regular fa-clock"></i>Time Table（PDF）</h3>
+            <div class="footer-row1">
+              <a href="#"><img src="images/fot-botan1.png" alt=""></a>
+              <a href="#"><img src="images/fot-botan2.png" alt=""></a>
+              <a href="#"><img src="images/fot-botan3.png" alt=""></a>
+            </div>
+            <h3><i class="fa-regular fa-comment"></i>公式SNS</h3>
+            <div class="footer-row2">
+              <a href="#"><img src="images/sns1.png" alt="LINE"></a>
+              <a href="#"><img src="images/sns2.png" alt="Facebook"></a>
+              <a href="#"><img src="images/sns3.png" alt="Twitter"></a>
+              <a href="#"><img src="images/sns4.png" alt="Instglam"></a>
+              <a href="#"><img src="images/sns5.png" alt="youtube"></a>
+            </div>
+          </div>
+          <img src="images/tate-senn.png" alt="縦線">
+          <div class="footer-box">
+            <ul>
+              <li><a href="#">安全への取り組み</a></li>
+              <li><a href="#">運送約款</a></li>
+              <li><a href="#">運送約款（貨物）</a></li>
+              <li><a href="#">運賃及び料金の適用方</a></li>
+            </ul>
+          </div>
+          <img src="images/tate-senn.png" alt="縦線">
+          <div class="footer-box">
+            <ul>
+              <li><a href="#">避難経路マップ（PDF)</a></li>
+              <li><a href="#">個人情報保護の取り組み</a></li>
+              <li><a href="#">特定商取引法に基づく表記</a></li>
+              <li><a href="#">推奨環境について</a></li>
+              <li><a href="#">サイトマップ</a></li>
+              <li><a href="#">リンク集</a></li>
+            </ul>
+          </div>
+          <img src="images/tate-senn.png" alt="縦線">
+        </div>
+      </div>
+
+      <div class="footer-wrapperbottom">
+        <div class="footer-box">
+          <a href="index.html">
+            <h1><img src="images/logo.png" alt="logo"></h1>
+          </a>
+          <p><small>Copyright©カーフェリー（いえしま・ぐすく）　All rights reserved</small></p>
+        </div>
+        <div class="footer-boxlust">
+          <p>お問い合わせ・船のご予約<br>(受付時間 毎日9:30〜18:00)</p>
+          <p class="bold">・伊江港　0980-49-2255 ・本部港　0980-47-3940</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</div>
+
+</html>

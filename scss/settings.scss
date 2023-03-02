@@ -1,0 +1,22 @@
+$main-color: #ffffff;
+$accent-color: #ea634d;
+$base-coloer: #294da5;
+$font-coloer: #333333;
+
+// ----------------------------------------
+//ミックスイン
+//----------------------------------------
+// 横並び
+@mixin row() {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+@mixin center() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

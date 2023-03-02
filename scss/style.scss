@@ -1,0 +1,652 @@
+@import 'settings.scss';
+
+// ---------------
+// 基本設定
+// ---------------
+
+body {
+  background-color: $main-color;
+  color: $base-coloer;
+  font-size: 16px;
+}
+
+
+// ---------------
+// TOPヘッダー
+// ---------------
+
+header {
+  position: relative;
+  z-index: 100;
+  margin: 20px auto 0 auto;
+  width: 1000px;
+
+  input[type="text"] {
+    border: 1px solid $font-coloer;
+  }
+
+  .header-top {
+    @include row;
+    margin-bottom: 20px
+  }
+
+  h2.lang {
+    @include center;
+    width: 165px;
+    height: 40px;
+    background-color: #e3e3e0;
+    border: 1px solid $font-coloer;
+    border-radius: 5px;
+  }
+
+  h2.Contact {
+    @include center;
+    width: 165px;
+    height: 40px;
+    color: #ffffff;
+    background-color: $base-coloer;
+    border: 1px solid $font-coloer;
+    border-radius: 5px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+}
+
+// ---------------
+// TOPスライダー
+// ---------------
+
+.slider {
+  margin-top: -70px;
+  margin-bottom: 100px;
+
+  img {
+    width: 100%;
+  }
+}
+
+// ---------------
+// TOPメイン
+// ---------------
+
+main {
+
+  .fa-solid {
+    font-size: 30px;
+    @include center;
+  }
+
+  h1 {
+    font-size: 25px;
+    text-align: center;
+    line-height: 2.0;
+  }
+
+  p.small {
+    text-align: center;
+  }
+
+
+  .news {
+    width: 1000px;
+    margin: 0 auto 120px auto;
+    border: 1px solid $font-coloer;
+    padding: 20px 0 0 10px;
+
+
+    .news-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        margin: 40px 40px 40px 80px;
+      }
+
+      .news-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+    }
+  }
+
+  .plan {
+    padding: 30px 0 110px 0;
+    margin-bottom: 50px;
+    background-image: url(../images/top-plan-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    .plan-wrapper {
+      width: 1000px;
+      margin: 50px auto 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  .link {
+    width: 1000px;
+    margin: 0 auto 50px auto;
+
+    .link-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 30px;
+
+      .links {
+        border: 1px solid $base-coloer;
+        width: 240px;
+        height: 60px;
+        font-size: 20px;
+        @include center;
+      }
+    }
+  }
+}
+
+// ---------------
+// フッター
+// ---------------
+
+footer {
+
+  .background-color {
+    background-color: #ebf0f2;
+  }
+
+  .footer-wrappertop {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 80px 50px 60px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+
+    h3 {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .footer-row1 {
+      margin-bottom: 40px;
+    }
+
+    ul li {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+  }
+
+  .footer-wrapperbottom {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer-box {
+      @include center;
+
+      h1 {
+        margin: 10px 0 10px 0;
+      }
+    }
+
+    .footer-boxlust {
+      @include center;
+
+      p {
+        font-size: 16px;
+        line-height: 1.25;
+      }
+
+      p.bold {
+        font-size: 20px;
+        line-height: 2.0;
+      }
+    }
+  }
+}
+
+// ---------------
+// 予約ページ
+// ---------------
+
+
+main#yoyaku {
+  background-color: #f1f1f1;
+
+  .yoyaku-box {
+    background-color: #ffffff;
+    border: 1px solid $font-coloer;
+    box-shadow: rgba(0, 0, 0, 30);
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 30px 0 30px 0;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .line {
+    display: block;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+
+  p {
+    margin-left: 130px;
+    margin-bottom: 60px;
+  }
+
+  input {
+    width: 220px;
+    height: 40px;
+    border: 1px solid $font-coloer;
+    margin-left: 50px;
+  }
+
+  select {
+    width: 220px;
+    height: 40px;
+    border: 1px solid $font-coloer;
+    margin-left: 50px;
+  }
+
+  .submid {
+    @include center;
+
+    input[type="submit"] {
+      width: 300px;
+      height: 70px;
+      background-color: $base-coloer;
+      color: $main-color;
+      @include center;
+      margin-bottom: 80px;
+    }
+  }
+
+}
+
+// ---------------
+//　運行状況
+// ---------------
+
+
+#unkou {
+  width: 1000px;
+  margin: 0 auto;
+
+  h1 {
+    margin: 50px 0 50px 0;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .gocyuui {
+    border: 1px solid $base-coloer;
+    padding: 20px 0 0 0;
+    margin-bottom: 80px;
+
+    h2 {
+      font-size: 16px;
+      margin-bottom: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    p {
+      line-height: 1.5;
+      margin-bottom: 40px;
+      text-align: center;
+
+    }
+
+    .center {
+      @include center;
+    }
+
+    p.button {
+      width: 370px;
+      height: 50px;
+      background-color: $base-coloer;
+      color: $main-color;
+      @include center;
+      border-radius: 10px;
+    }
+  }
+
+  h3 {
+    margin-bottom: 30px;
+  }
+
+  table {
+    font-size: 16px;
+    line-height: 2.0;
+    width: 450px;
+    margin-bottom: 50px;
+
+    th {
+      text-align: center;
+      border: solid 1px $font-coloer;
+      background-color: #EBF0F2;
+    }
+
+    td {
+      border: solid 1px $font-coloer;
+      text-align: center;
+    }
+  }
+
+  .onegai {
+    border: 1px solid $base-coloer;
+    padding: 30px 0 20px 0;
+    margin-bottom: 100px;
+
+    h2 {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    p {
+      text-align: center;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+    p.red {
+      text-align: center;
+      color: $accent-color;
+      line-height: 1.5;
+      margin-bottom: 30px;
+    }
+
+  }
+
+  p.unkou-lust {
+    color: $font-coloer;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+
+  .unkou-lust:last-child {
+    margin-bottom: 100px;
+  }
+
+}
+
+// ---------------
+// 予約から乗船まで
+// ---------------
+
+
+#yoyakukarajyousen {
+
+
+
+  h1 {
+    margin: 80px 0 50px 0;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .top-wrapper {
+    @include center;
+    background-color: $base-coloer;
+    height: 70px;
+    margin-bottom: 80px;
+
+    .top-wrapper2 {
+      width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h2 {
+      @include center;
+      width: 490px;
+      height: 50px;
+      background-color: #EBF0F2;
+      color: $base-coloer;
+      border-radius: 10px;
+    }
+  }
+
+  .width1000 {
+    background-color: $base-coloer;
+    height: 50px;
+    @include center;
+    margin-bottom: 80px;
+
+    h3 {
+      color: $main-color;
+      width: 1000px;
+      margin: 0 auto;
+      text-align: left;
+    }
+  }
+
+  p.bold {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px
+  }
+
+  .bottan-wrapper {
+    @include center;
+    margin-bottom: 70px;
+  }
+
+  .bottan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $accent-color;
+    color: $main-color;
+    width: 400px;
+    height: 70px;
+    border-radius: 10px;
+
+    fa-solid {
+      color: $main-color;
+    }
+
+    p {
+      font-size: 20px;
+      color: $main-color;
+    }
+
+
+  }
+
+  h4 {
+    width: 1000px;
+    margin: 0 auto;
+    border-bottom: 1px solid $base-coloer;
+    margin-bottom: 30px;
+  }
+
+  h5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    color: $font-coloer;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .glay-box {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #e3e3e0;
+    padding: 30px 0 30px 30px;
+    margin-bottom: 30px;
+  }
+
+
+  table {
+    font-size: 16px;
+    line-height: 2.0;
+    width: 450px;
+
+    th {
+      text-align: center;
+      border: solid 1px $font-coloer;
+      background-color: #EBF0F2;
+    }
+
+    td {
+      background-color: $main-color;
+      border: solid 1px $font-coloer;
+      text-align: center;
+    }
+
+    .red {
+      color: $accent-color;
+    }
+  }
+
+  .tel-box-wrapper {
+    @include center;
+  }
+
+  .tel-box {
+    @include center;
+    width: 500px;
+    background-color: #ebf0f2;
+    border: 1px solid $base-coloer;
+    border-radius: 10px;
+    margin-bottom: 70px;
+
+    p {
+      color: $base-coloer ;
+      margin: 0;
+    }
+  }
+
+  #jyousenhouhou {
+
+    table {
+      font-size: 16px;
+      line-height: 2.0;
+      width: 700px;
+
+      th {
+        text-align: center;
+        border: solid 1px $font-coloer;
+        background-color: #EBF0F2;
+      }
+
+      td {
+        background-color: $main-color;
+        border: solid 1px $font-coloer;
+        text-align: center;
+      }
+    }
+  }
+
+  .kekkouannai {
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+  }
+
+  .mini-bottan {
+    @include center;
+    margin-bottom: 150px;
+
+    p {
+      @include center;
+      color: $main-color;
+      background-color: $base-coloer;
+      width: 200px;
+      height: 40px;
+      border-radius: 10px;
+    }
+  }
+}
+
+
+// ---------------
+// 島で遊ぶ
+// ---------------
+
+#shimadeasobu {
+
+  .slider {
+    margin-top: 0;
+  }
+
+  section {
+    width: 1000px;
+    margin: 0 auto;
+
+    .center {
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 10px;
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 100px;
+    }
+  }
+
+  .shimadeasobu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  .map {
+    margin-bottom: 100px;
+  }
+
+
+
+
+}
